@@ -1,0 +1,98 @@
+Navbar
+.navbar {
+  background: linear-gradient(to right, #d16ba5, #86a8e7, #5ffbf1);
+  padding: 15px 0;
+}
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #ffeb3b !important;
+}
+
+/* Home Section */
+#home {
+  height: 100vh;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #222;
+}
+#home h1 {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+.btn-custom {
+  background: #fee6f8;
+  color: #222;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.btn-custom:hover {
+  background: #ff6ec4;
+  color: #fff;
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  color: #222;
+  padding: 80px 0;
+}
+#about h2, #about h3 {
+  color: #fff;
+}
+
+/* Projects Section */
+#projects {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: #222;
+  padding: 80px 0;
+}
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Skills Section */
+#skills {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #222;
+  padding: 80px 0;
+}
+.progress {
+  height: 25px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #eee;
+}
+.progress-bar {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  border-radius: 50px;
+  transition: width 0.6s ease;
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: #fff;
+  padding: 80px 0;
+}
+#contact .form-control {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+#contact button {
+  background: #ff6ec4;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+#contact button:hover {
+  background: #7873f5;
+}

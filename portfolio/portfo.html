@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 25);
+      color: aliceblue;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 70px;
+      background-color: rgb(2, 2, 51);
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: aliceblue;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(179, 179, 233);
+      font-size: 1.05rem;
+    }
+
+    main hr {
+      border: 0;
+      background-color: #9c97f1;
+      height: 1px;
+      margin: 40px auto;
+      width: 80%;
+    }
+
+    .firstsection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: 60px 20px;
+    }
+
+    .firstsection div {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+
+    .leftsection {
+      font-size: 1.8rem;
+    }
+
+    .leftsection .buttons {
+      margin-top: 30px;
+    }
+
+    .leftsection .btn {
+      background-color: #1e2167;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: 0.3s;
+      border: none;
+    }
+
+    .leftsection .btn:hover {
+      background-color: #292b8f;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+    }
+
+    .purple {
+      color: rgb(144, 54, 228);
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    #element {
+      color: rgb(144, 54, 228);
+    }
+
+    .secondsection {
+      max-width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .secondsection h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .secondsection .box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .secondsection .vertical {
+      flex: 1 1 150px;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .image-top {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .vertical-tittle {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .vertical-desc {
+      color: gray;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+      margin-top: 40px;
+    }
+
+    .footer1 {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin: 5px 0;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .firstsection {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .leftsection {
+        font-size: 1.5rem;
+      }
+
+      .leftsection .btn {
+        display: block;
+        margin: 10px auto;
+      }
+
+      .secondsection .box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer1 {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav .left {
+        font-size: 1.2rem;
+      }
+
+      .leftsection {
+        font-size: 1.2rem;
+      }
+
+      .secondsection h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Kashish's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, my name is <span class="purple">Kashish</span>
+        <div>I am a student of Bsc.cs and I am passionate</div>
+        <div>Web Developer</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="po.png.webp" alt="Portfolio Image">
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-tittle">HTML Developer (2022-2023)</div>
+          <div class="vertical-desc">Worked on building responsive static websites using HTML and CSS.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-tittle">Web Developer (2022-2023)</div>
+          <div class="vertical-desc">Developed dynamic websites with JavaScript and backend integration.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="i.png" alt="">
+          <div class="vertical-tittle">App Developer (2022-2023)</div>
+          <div class="vertical-desc">Created mobile applications with user-friendly interfaces.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="in.jpg" alt="">
+          <div class="vertical-tittle">MERN Developer (2022-2023)</div>
+          <div class="vertical-desc">Built full-stack applications using MongoDB, Express, React, and Node.js.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="h.png" alt="">
+          <div class="vertical-tittle">MEAN Developer (2022-2023)</div>
+          <div class="vertical-desc">Developed scalable applications using Angular and Node.js.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer1">
+      <div class="footer-first">Kashish's Portfolio Website</div>
+      <div class="footer-second footer">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div
